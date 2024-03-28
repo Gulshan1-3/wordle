@@ -22,11 +22,22 @@ impl Correctness {
         assert_eq!(answer.len(),5);
         assert_eq!(answer.len(),5);
         let mut c = [Correctness::Wrong;5];
+        //Mark things green 
         for (i,(a,g)) in answer.chars().zip(guess.chars()).enumerate(){
             if a == g {
 
                 c[i] = Correctness::Correct;
             
+
+            } 
+
+
+ //Mark things green 
+ for (i,(a,g)) in answer.chars().zip(guess.chars()).enumerate(){
+    if a == g {
+
+        c[i] = Correctness::Correct;
+    
 
             }
         }
@@ -34,7 +45,7 @@ impl Correctness {
              
             
         }
-}
+    }
 
 
     
