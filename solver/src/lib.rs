@@ -30,19 +30,23 @@ impl Correctness {
             
 
             } 
-
+        }
 
  //Mark things green 
- for (i,(a,g)) in answer.chars().zip(guess.chars()).enumerate(){
+ for (i,g) in answer.chars()
+ .zip(guess.chars()).enumerate(){
     if a == g {
 
-        c[i] = Correctness::Correct;
+        //already marked green
+        continue;
     
 
             }
+
+            if let Some(j) = answer.chars().enumerate.find_map(|i,a)
         }
         
-             
+             todo!();
             
         }
     }
